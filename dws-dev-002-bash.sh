@@ -42,7 +42,7 @@ case $1 in
                     if [[ $? -eq 0 ]]; then
                     exit 0 
                     else
-                    for i in $number; do
+                    for (( i=1;i<=$number;i++)); do
                     echo "Doing command again ..."
                     sleep $interval
                     fcommand
